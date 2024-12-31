@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.blue-box {
+  height: 8vh;
+  background-color: #0041af;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  padding-top: 10px;
+  position: relative;
+  right: 60px;
+}
+
+.left img {
+  position: relative;
+  top: 4px;
+}
+
+.left :nth-child(3):hover,
+.left :nth-child(5):hover,
+.left :nth-child(8):hover,
+.left :last-child:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.new {
+  height: 13px;
+  background-color: red;
+  border-radius: 5px;
+  font-size: xx-small;
+  font-weight: bold;
+  color: white;
+  padding: 0px 4px;
+  text-align: center;
+  position: relative;
+  bottom: 4px;
+}
+
+.right button {
+  color: white;
+  border: solid white;
+  border-radius: 3px;
+  background-color: #0041af;
+  font-family: "Roboto";
+  font-size: 12px;
+  height: 5vh;
+  width: 8vw;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 13px 0px 10px 30px;
+}
+
+.logo img {
+  height: 57px;
+}
+
+.icons ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.icons ul li a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: red;
+  height: 700px;
+}
+
+.hero video {
+  object-fit: cover;
+  height: 510px;
+  width: 100%;
+}
+
+.content {
+  color: white;
+  position: relative;
+  bottom: 370px;
+  left: 163px;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.content h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.cta-buttons button {
+  background-color: rgba(0, 65, 174, 0.6);
+  font-weight: 500;
+  font-size: 18px;
+  width: 215px;
+  height: 45px;
+  border-radius: 3px;
+  opacity: 1;
+  color: white;
+  border: none;
+}
+
+.cta-buttons button:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.form-container {
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  left: 940px;
+  bottom: 690px;
+  height: 380px;
+}
+
+.form-header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+}
+
+.form-body {
+  padding: 20px;
+}
+
+.form-body input,
+.form-body select,
+.form-body button {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px;  
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.form-body select{
+  width: 98.2%;
+}
+
+.form-body button{
+  width: 98.2%;
+}
+
+.form-body input:focus,
+.form-body select:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+.form-body button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-body button:hover {
+  background-color: #333;
+}
+
+.feature-box{
+  display: flex;
+  color: black;
+  position: relative;
+  bottom: 300px;
+}
